@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snubzi | Professional Achievement Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom styles for a dark, professional aesthetic */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d121c; /* Very Dark Blue/Black */
+            color: #e5e7eb; /* Off-White Text */
+        }
+        .accent-color {
+            color: #3b82f6; /* Blue Accent (Reverted) */
+        }
+        .bg-card {
+            background-color: #1f2937; /* Card background */
+        }
+        /* Custom styles for professional metrics */
+        .metric-box {
+            background-color: #111827;
+            border-left: 4px solid #3b82f6; /* Blue border for emphasis (Reverted) */
+        }
+        /* Adjusting aspect ratio for vertical short-form content (9:16) */
+        .vertical-ratio {
+            padding-top: 177.77%; 
+            position: relative;
+            background-color: #0d121c; /* Background for embeds */
+        }
+        /* Adjusting aspect ratio for thumbnail images (16:9) */
+        .thumbnail-ratio {
+            padding-top: 56.25%; /* 9/16 * 100% */
+            position: relative;
+            background-color: #0d121c;
+        }
+        .vertical-ratio iframe, .vertical-ratio .tiktok-embed,
+        .thumbnail-ratio img, .thumbnail-ratio div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        /* Style adjustments for the embedded TikTok to fit the responsive grid */
+        .tiktok-embed {
+            margin: 0 auto !important; /* Center the embed */
+            width: 100%;
+        }
+        .metric-screenshot {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            /* Added min-height to ensure visual consistency when image size varies */
+            min-height: 150px; 
+            max-height: 250px; 
+        }
+        /* Ensuring the ratio container respects the natural image height for screenshots */
+        .screenshot-container {
+            padding-top: 0;
+            position: relative;
+            height: 150px; /* Fixed height for consistency */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="p-6 md:px-12 bg-card shadow-2xl sticky top-0 z-50">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <h1 class="text-3xl font-extrabold accent-color tracking-wider">Snubzi | Achievement Portfolio</h1>
+            <nav class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About Me</a>
+                <a href="#metrics" class="hover:text-blue-400 transition">Key Metrics</a>
+                <a href="#portfolio" class="hover:text-blue-400 transition">Portfolio</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </nav>
+            <a href="#contact" class="md:hidden px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition shadow-lg">
+                Contact
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Original Professional Summary) -->
+    <section class="text-center py-20 md:py-32 max-w-4xl mx-auto px-6">
+        <p class="text-lg uppercase font-semibold text-blue-400 mb-4 tracking-widest">Scalable Content Production & Strategy</p>
+        <h2 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+            Driving <span class="accent-color">Tangible Growth</span> through Elite Video Engineering.
+        </h2>
+        <p class="text-xl md:text-2xl text-gray-400 mb-10">
+            A proven editor specializing in maximizing viewer retention and click-through rates (CTR) across YouTube, TikTok, and Instagram Reels. Focused entirely on delivering measurable results.
+        </p>
+        <a href="#metrics" class="inline-block px-10 py-4 text-xl font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition transform hover:scale-105 shadow-xl shadow-blue-500/50">
+            View Performance Summary
+        </a>
+    </section>
+    
+    <!-- About Me Section -->
+    <section id="about" class="py-16 px-6 bg-card">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <!-- Image Placeholder -->
+            <div class="md:w-1/3 w-full flex justify-center">
+                <div class="w-64 h-64 bg-gray-700 rounded-full shadow-2xl flex items-center justify-center border-4 border-blue-500/50">
+                    <span class="text-xl font-bold text-gray-300">Profile Picture Placeholder</span>
+                </div>
+            </div>
+            
+            <!-- Text Content -->
+            <div class="md:w-2/3 w-full text-center md:text-left">
+                <h3 class="text-4xl font-bold accent-color mb-4">The Editor Behind the Metrics</h3>
+                <p class="text-lg text-gray-300 mb-4">
+                    My name is Snubzi, and I started my editing journey 6 years ago, turning a passion for gaming and storytelling into a professional, results-oriented skill set. Despite being 16, my experience isn't measured in age, but in the measurable impact on client channels. I speak the language of algorithms, understanding that every cut, graphic, and sound effect must serve a single purpose: **viewer retention and conversion.**
+                </p>
+                <p class="text-lg text-gray-300">
+                    I pride myself on rapid turnaround, meticulous attention to detail, and a deep understanding of current platform trends. My goal is to be more than just an editor—I aim to be a creative partner dedicated to scaling your digital presence efficiently and effectively.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Section -->
+    <section id="metrics" class="py-16 bg-gray-900 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-4xl font-bold text-center mb-12">Performance & Impact</h3>
+            <div class="bg-card rounded-2xl shadow-2xl p-8 md:p-12 border-t-4 border-blue-500/50">
+                <!-- Age and experience added -->
+                <p class="text-center text-xl md:text-2xl font-medium mb-10 text-gray-300">
+                    I'm a 16-year-old <span class="font-bold text-white">professional editor</span> with <span class="font-bold text-white">6 years of experience</span> specializing in high-engagement short and long-form content. I understand the grind of the content game—and I’m here to take the pressure off.
+                </p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <!-- Metric 1: Total Reach -->
+                    <div class="metric-box p-4 rounded-lg shadow-lg">
+                        <p class="text-4xl md:text-5xl font-extrabold accent-color">1M+</p>
+                        <p class="text-base md:text-lg text-gray-400 mt-1">Videos with 1M+ Views</p>
+                    </div>
+
+                    <!-- Metric 2: Content Expertise -->
+                    <div class="metric-box p-4 rounded-lg shadow-lg">
+                        <p class="text-4xl md:text-5xl font-extrabold accent-color">6+</p>
+                        <p class="text-base md:text-lg text-gray-400 mt-1">Years of Editing Experience</p>
+                    </div>
+                    
+                    <!-- Metric 3: Personal Growth (Proof of Concept) -->
+                    <div class="metric-box p-4 rounded-lg shadow-lg">
+                        <p class="text-4xl md:text-5xl font-extrabold accent-color">6K+</p>
+                        <p class="text-base md:text-lg text-gray-400 mt-1">Subscribers on Personal Channel</p>
+                    </div>
+                    
+                    <!-- Metric 4: Retention Focus (NEW STAT) -->
+                    <div class="metric-box p-4 rounded-lg shadow-lg">
+                        <p class="text-4xl md:text-5xl font-extrabold accent-color">30%+</p>
+                        <p class="text-base md:text-lg text-gray-400 mt-1">Avg. Retention Increase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Samples Section -->
+    <section id="portfolio" class="py-16 md:py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-4xl md:text-5xl font-bold text-center mb-4">Portfolio Samples</h3>
+            <p class="text-center text-xl text-gray-400 mb-16">A look at recent short-form, long-form, and thumbnail assets produced for clients, demonstrating diverse visual styles and engagement tactics.</p>
+
+            <div class="space-y-16">
+                
+                <!-- 1. Short-Form Samples -->
+                <div>
+                    <h4 class="text-3xl font-bold accent-color mb-6 border-b pb-2 border-gray-700">1. Short-Form Video Examples (TikTok/Reels/Shorts)</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                        
+                        <!-- Sample 1: TikTok Embed (Professional Edit) -->
+                        <div class="bg-card rounded-xl overflow-hidden shadow-2xl group transition duration-300 hover:scale-[1.02] flex flex-col items-center">
+                            <!-- TikTok Embed Container -->
+                            <div class="w-full max-w-sm mx-auto p-4 flex justify-center">
+                                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@snu4zie/video/7551949595056557319" data-video-id="7551949595056557319" style="max-width: 605px;min-width: 325px;"> 
+                                    <section> 
+                                        <a target="_blank" title="@snu4zie" href="https://www.tiktok.com/@snu4zie?refer=embed">@snu4zie</a> Please follow 🙏 || best character of all time || 
+                                        <a title="miles" target="_blank" href="https://www.tiktok.com/tag/miles?refer=embed">#miles</a> 
+                                        <a title="spiderman" target="_blank" href="https://www.tiktok.com/tag/spiderman?refer=embed">#spiderman</a> 
+                                        <a title="edit" target="_blank" href="https://www.tiktok.com/tag/edit?refer=embed">#edit</a> 
+                                        <a target="_blank" title="♬ original sound - snub" href="https://www.tiktok.com/music/original-sound-7551949628304902929?refer=embed">♬ original sound - snub</a> 
+                                    </section> 
+                                </blockquote> 
+                            </div>
+                            <div class="p-5 w-full text-center">
+                                <p class="text-lg font-semibold text-blue-400">Professional Edit Showcase</p>
+                                <p class="text-sm text-gray-400 mt-1">Focus: High-Impact Pacing, Cinematic Transitions, and Emotional Storytelling.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Sample 2: TikTok Embed (Viral Success) -->
+                        <div class="bg-card rounded-xl overflow-hidden shadow-2xl group transition duration-300 hover:scale-[1.02] flex flex-col items-center">
+                            <!-- TikTok Embed Container -->
+                            <div class="w-full max-w-sm mx-auto p-4 flex justify-center">
+                                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@_engaging_clips/video/7485471586355662135" data-video-id="7485471586355662135" style="max-width: 605px;min-width: 325px;"> 
+                                    <section> 
+                                        <a target="_blank" title="@_engaging_clips" href="https://www.tiktok.com/@_engaging_clips?refer=embed">@_engaging_clips</a> Adolescence is so peak 
+                                        <a title="adolescence" target="_blank" href="https://www.tiktok.com/tag/adolescence?refer=embed">#adolescence</a> 
+                                        <a title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a> 
+                                        <a title="trending" target="_blank" href="https://www.tiktok.com/tag/trending?refer=embed">#trending</a> 
+                                        <a title="detail" target="_blank" href="https://www.tiktok.com/tag/detail?refer=embed">#detail</a> 
+                                        <a target="_blank" title="♬ original sound - ʚĭɞ" href="https://www.tiktok.com/music/original-sound-7449067587487058718?refer=embed">♬ original sound - ʚĭɞ</a> 
+                                    </section> 
+                                </blockquote> 
+                            </div>
+                            <div class="p-5 w-full text-center">
+                                <p class="text-lg font-semibold text-blue-400">Viral Success: 1M+ View Showcase</p>
+                                <p class="text-sm text-gray-400 mt-1">Focus: Proven Virality, Audience Hooking Strategies, and Trend Synchronization.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Sample 3: YouTube Short Embed (High Retention) -->
+                        <div class="bg-card rounded-xl overflow-hidden shadow-2xl group transition duration-300 hover:scale-[1.02] flex flex-col">
+                            <div class="vertical-ratio">
+                                <iframe src="https://www.youtube.com/embed/SIFsNeBypRk" title="The Water SAVED Me At The End 😂 #minecraft #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="p-5">
+                                <p class="text-lg font-semibold text-blue-400">Retention Engineering: Viral Strategy</p>
+                                <p class="text-sm text-gray-400 mt-1">Focus: High-velocity editing, dynamic callouts, and suspense elements to drive 100%+ average view duration (AVD).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Long-Form Thumbnail Design Examples -->
+                <div>
+                    <h4 class="text-3xl font-bold accent-color mb-6 border-b pb-2 border-gray-700">2. Long-Form Thumbnail Design Examples (High CTR Focus)</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Thumbnail 1: IRL Content Example (Video Embed) -->
+                        <div class="bg-card rounded-xl overflow-hidden shadow-2xl group transition duration-300 hover:scale-[1.02]">
+                            <!-- Responsive Iframe Container -->
+                            <div class="relative w-full aspect-video bg-gray-700">
+                                <iframe class="w-full h-full absolute top-0 left-0" src="https://www.youtube.com/embed/Akg5lIJTpMg?si=2pU-eg7V9pqKZkxb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="p-5">
+                                <p class="text-lg font-semibold text-blue-400">IRL Content Thumbnail</p>
+                                <p class="text-sm text-gray-400 mt-1">Example of high-stakes, real-life content cover art (Click-through focus).</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Thumbnail 2: Gaming Content Example (Video Embed) -->
+                        <div class="bg-card rounded-xl overflow-hidden shadow-2xl group transition duration-300 hover:scale-[1.02]">
+                            <!-- Responsive Iframe Container -->
+                            <div class="relative w-full aspect-video bg-gray-700">
+                                <iframe class="w-full h-full absolute top-0 left-0" src="https://www.youtube.com/embed/fGtwlxBCv_8?si=qVFOHmogn3A4tufY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <div class="p-5">
+                                <p class="text-lg font-semibold text-blue-400">Gaming Content Thumbnail</p>
+                                <p class="text-sm text-gray-400 mt-1">Example of competitive gaming cover art (Dramatic text and subject placement).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Long Form Editing Showcase -->
+                <div>
+                    <h4 class="text-3xl font-bold accent-color mb-6 border-b pb-2 border-gray-700">3. Long Form Editing Showcase (10+ Minutes)</h4>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-2xl">
+                        <!-- Responsive Iframe Container for Long-Form Video -->
+                        <div class="relative w-full aspect-video bg-gray-700 rounded-lg overflow-hidden">
+                            <iframe class="w-full h-full absolute top-0 left-0" src="https://www.youtube.com/embed/9fsGVwh0v_c?si=OB7xhY_MhBpID1u3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="text-lg font-semibold text-blue-400 mt-4">Minecraft Long Form Editing Showcase</p>
+                        <p class="text-sm text-gray-400 mt-1">A comprehensive example of narrative structuring, dynamic pacing, sound mixing, and graphic integration for sustained viewer retention over 10+ minutes in the gaming niche.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Metric-Driven Results: Proven Work Collection (UPDATED WITH SCREENSHOTS) -->
+                <div>
+                    <h4 class="text-3xl font-bold accent-color mb-6 border-b pb-2 border-gray-700">4. Metric-Driven Results: Proven Work Collection</h4>
+                    <p class="text-lg text-gray-400 mb-8">
+                        Direct analytical proof of success across critical metrics: Click-Through Rate (CTR) and monthly viewership growth on various client channels.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        
+                        <!-- Asset 1: High CTR 15.6% -->
+                        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                            <div class="screenshot-container p-4 bg-gray-700 flex items-center justify-center">
+                                <img src="uploaded:CTR 2.png-a2348678-5be9-4580-a0a9-9cc707c1bbe5" alt="Screenshot of 15.6% Impressions Click-Through Rate" class="metric-screenshot">
+                            </div>
+                            <div class="p-4 text-center">
+                                <p class="text-base font-semibold text-blue-300">Exceptional CTR Achievement</p>
+                                <p class="text-xs text-gray-400 mt-1">Proof of thumbnail and title optimization achieving an elite **15.6%** Click-Through Rate.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Asset 2: Strong CTR 11.2% -->
+                        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                            <div class="screenshot-container p-4 bg-gray-700 flex items-center justify-center">
+                                <img src="uploaded:CTR.png-1987fa12-97cc-46c5-bf18-d28177107a3e" alt="Screenshot of 11.2% Impressions Click-Through Rate, 43.4K Views" class="metric-screenshot">
+                            </div>
+                            <div class="p-4 text-center">
+                                <p class="text-base font-semibold text-blue-300">Viral Views and High CTR</p>
+                                <p class="text-xs text-gray-400 mt-1">Video with over **43.4K views** performing above usual, driven by an **11.2% CTR**.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Asset 3: Monthly View Growth 342.7K -->
+                        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                            <div class="screenshot-container p-4 bg-gray-700 flex items-center justify-center">
+                                <img src="uploaded:monty views.png-356b0752-41cb-476e-ba8d-92fb2b5af558" alt="Screenshot of 342.7K Views and 2.6K Watch Time in last 28 days" class="metric-screenshot">
+                            </div>
+                            <div class="p-4 text-center">
+                                <p class="text-base font-semibold text-blue-300">Significant Monthly View Surge</p>
+                                <p class="text-xs text-gray-400 mt-1">Analytical data showing **342.7K views** and **2.6K hours** of watch time in 28 days.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Asset 4: Channel Growth 209.0K Views -->
+                        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                            <div class="screenshot-container p-4 bg-gray-700 flex items-center justify-center">
+                                <img src="uploaded:Channel views.png-87d78dfe-d4f9-48e7-89d2-56c479a9bc75" alt="Screenshot of 5,179 Subscribers and 209.0K Views in last 28 days" class="metric-screenshot">
+                            </div>
+                            <div class="p-4 text-center">
+                                <p class="text-base font-semibold text-blue-300">Channel Scale & Performance</p>
+                                <p class="text-xs text-gray-400 mt-1">Proof of channel growth with **5K+ subscribers** and **209.0K views** in the last month.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+             <!-- Formalized Inquiry Card -->
+            <div class="mt-16 bg-gray-800 p-8 md:p-12 rounded-xl shadow-inner shadow-blue-500/30 text-center border border-blue-500/50">
+                <h4 class="text-3xl md:text-4xl font-extrabold mb-4 text-blue-400">Schedule a Consultation</h4>
+                <p class="text-xl text-gray-300 mb-8">
+                    To receive a detailed quote and discuss how my editing can directly impact your channel's key performance indicators (KPIs), please reach out with your specific project details.
+                </p>
+                <a href="mailto:snubziedits@gmail.com?subject=Professional%20Hiring%20Inquiry%20%7C%20Project%20Consultation" class="inline-block px-10 py-4 text-xl font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition transform hover:scale-105 shadow-xl shadow-blue-500/50">
+                    Submit Project Brief
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section / Footer -->
+    <section id="contact" class="py-16 md:py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-4xl font-bold mb-4">Connect Directly</h3>
+            <p class="text-xl text-gray-400 mb-8">Available for immediate contract and long-term partnership opportunities.</p>
+            
+            <a href="mailto:snubziedits@gmail.com" class="inline-block px-12 py-4 text-xl font-bold bg-green-600 hover:bg-green-700 text-white rounded-xl transition transform hover:scale-105 shadow-xl shadow-green-500/50">
+                Email for Scope of Work
+            </a>
+
+            <!-- Social Media Icon Bar -->
+            <div class="mt-8 flex justify-center space-x-8 text-3xl">
+                <a href="https://www.instagram.com/snubzi_edits/" target="_blank" class="text-gray-400 hover:text-pink-500 transition transform hover:scale-110" title="Instagram: @snubzi_edits">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@snuzbi.edits" target="_blank" class="text-gray-400 hover:text-gray-200 transition transform hover:scale-110" title="TikTok: @snuzbi.edits">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://discord.gg/SAJtXs46" target="_blank" class="text-gray-400 hover:text-indigo-400 transition transform hover:scale-110" title="Discord: Join Snubzi Edits Server">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="mailto:snubziedits@gmail.com" class="text-gray-400 hover:text-blue-400 transition transform hover:scale-110" title="Business Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <p class="mt-4 text-lg text-gray-500">
+                Contact: <span class="font-mono text-gray-300">snubziedits@gmail.com</span> | Discord Tag: <span class="font-mono text-gray-300">snubziedits_86892</span>
+            </p>
+            
+            <div class="mt-4 pt-8 border-t border-gray-800">
+                <p class="text-sm text-gray-600">&copy; 2025 Snubzi Edits. Professional Portfolio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TikTok Embed Script (Required to render the blockquote) -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    
+</body>
+</html>
